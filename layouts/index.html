@@ -7,7 +7,7 @@
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
       <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/" role="button">{{ i18n "get-started" }}</a>
-      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/h-enk/doks">GitHub v{{ $data := getJSON "/package.json" }}{{ $data.version }}</a></p>
+      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/KubeLilin"> Github </a></p>
     </div>
   </div>
 </section>
@@ -19,30 +19,30 @@
     <div class="container">
       <div class="row justify-content-center text-center">
         <div class="col-lg-5">
-          <h2 class="h4">Security aware</h2>
-          <p>Get A+ scores on <a href="https://observatory.mozilla.org/analyze/doks.netlify.app">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs.</p>
+          <h2 class="h4">以应用为中心</h2>
+          <p>覆盖应用全生命周期管理：可视化应用编排，一键式应用部署，版本管理，无缝升级，支持应用和服务秒级弹性伸缩.</p>
         </div>
         <div class="col-lg-5">
-          <h2 class="h4">Fast by default ⚡️</h2>
-          <p>Get 100 scores on <a href="https://googlechrome.github.io/lighthouse/viewer/?gist=59aafe464a68f8bc30b8e9a636d5b053">Google Lighthouse</a> by default. Doks removes unused css, prefetches links, and lazy loads images.</p>
+          <h2 class="h4">全栈开箱即用 ⚡️</h2>
+          <p>一体全栈，各服务模块作为平台组件，开箱即用，快速搭建,不论是阿里云/腾讯云，还是自建k8s,均可以轻松集成.</p>
         </div>
         <div class="col-lg-5">
-          <h2 class="h4">SEO-ready</h2>
-          <p>Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.</p>
+          <h2 class="h4">全面支持微服务架构和DevOps</h2>
+          <p>支持 SpringCloud、ServiceMesh 服务治理架构，支持广泛的 DevOps 工具链，与 ACP 无缝集成.</p>
         </div>
       </div>
       <div class="row justify-content-center text-center">
         <div class="col-lg-5">
-          <h2 class="h4">Full text search</h2>
-          <p>Search your Doks site with FlexSearch. Easily customize index settings and search options to your liking.</p>
+          <h2 class="h4">可高度定制的流水线</h2>
+          <p>经过简单配置，即可自动生成高并发流水线，高效执行构建、部署、测试、环境流转等任务。这一设计解决了微服务架构下带来的多服务交付效率低下的问题.</p>
         </div>
         <div class="col-lg-5">
-          <h2 class="h4">Page layouts</h2>
-          <p>Build pages with a landing page, blog, or documentation layout. Add custom sections and components to suit your needs.</p>
+          <h2 class="h4">完善的企业级运维、运营体系</h2>
+          <p>面向应用开发和运维，覆盖应用全生命周期，包括应用的创建、删除、 配置修改、自动伸缩及自动运维.</p>
         </div>
         <div class="col-lg-5">
-          <h2 class="h4">Dark mode</h2>
-          <p>Switch to a low-light UI with the click of a button. Change colors with variables to match your branding.</p>
+          <h2 class="h4">广泛的开放生态支持</h2>
+          <p>完全融入开源社区，并且拥有众多商业合作伙伴；通过灵雀云认证解决方案计划，让客户享受更多整合解决方案.</p>
         </div>
       </div>
     </div>
@@ -55,6 +55,21 @@
   <div class="row justify-content-center text-center">
     <div class="col-lg-9">
       {{- .Content -}}
+    </div>
+    <div class="col-lg-9">
+      <img style="width:80%" src="https://mnur-prod-public.oss-cn-beijing.aliyuncs.com/0/tech/functional_architecture.png"/>
+    </div>
+  </br>
+    <div class="col-lg-9">
+    </br>
+      <img style="width:80%" src="https://mnur-prod-public.oss-cn-beijing.aliyuncs.com/0/tech/physical_architecture.png"/>
+    </div>
+    <div class="col-lg-9">
+    </br>
+    </br>
+      2019年我们几个来自天南海北的水友基于对go语言的兴趣，开始动手编写了自己的第一个go的开源项目YoyoGo,这是一个基于go语言开发的Web框架,项目发布后收到了500+星星，这是出乎我们意料之外的。
+于是我们在想如何为YoyoGo编写一个示例项目来为大家提供更好的模板示例来降低大家的上手难度，以便更好的了解项目，恰值随着微服务架构大行其道，k8s也开始越来越进入大家的视野，于是我们开始设想做一个可以通过web服务直接操作K8s的API来实现持续集成的平台，于是KubeLilin便诞生了，Kube取自Kubernetes的简写，Lilin为EVA中最后的第十八使徒，也就是人类自己，虽然很中二但是喊起来朗朗上口。
+KubeLilin的贡献者皆是来自JAVA/.NET/GO/Node等不同领域的技术爱好者,如果你对我们的项目感兴趣，欢迎提交PR并加入我们。
     </div>
   </div>
 </section>

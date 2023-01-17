@@ -1,6 +1,0 @@
-[submodule "theme/Doks"]
-	path = theme/Doks
-	url = https://github.com/h-enk/doks.git
-[submodule "themes/Doks"]
-	path = themes/Doks
-	url = https://github.com/h-enk/doks.git

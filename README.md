@@ -9,7 +9,7 @@
 </h1>
 
 <h3 align="center">
-  Modern Documentation Theme
+  Kubelilin
 </h3>
 
 <p align="center">
